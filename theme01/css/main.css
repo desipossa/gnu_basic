@@ -123,3 +123,27 @@
     border-top: 1px solid #ddd;
     text-align: center;
 }
+
+.sub_bar {
+    background: #f7f7f7;
+    line-height: 40px;
+    font-size: 13px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub_bar .inner {
+    justify-content: flex-end;
+}
+
+#article {
+    flex: 3;
+    padding: 50px 50px 50px 0;
+    border-right: 1px solid #ddd;
+    min-height: 500px;
+}
+
+#aside {
+    flex: 1;
+    padding: 50px 0 50px 50px;
+}

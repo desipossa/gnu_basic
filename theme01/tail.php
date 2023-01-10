@@ -13,13 +13,17 @@ if(G5_COMMUNITY_USE === false) {
 ?>
 
 
-
+<?php
+if(!defined('_INDEX_')) { 
+    include G5_THEME_PATH.'/doc/sub.tail.php';
+}
+?>
 
 
 
 
 <footer id="footer">
-            &copy; 내가 만든 첫번쨰 홈페이지.
+            &copy; <?= $company ?>.
         </footer>
     </div>
 

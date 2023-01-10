@@ -1,6 +1,7 @@
 <?php
 include_once('../../../common.php');
 $num = 1;
+$title = '회사소개';
 include_once(G5_THEME_PATH.'/head.php');
 ?>
 

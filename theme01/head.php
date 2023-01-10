@@ -24,27 +24,30 @@ if(defined('_INDEX_')) { // index에서만 실행
     include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
 }
 ?>
-
+<?php
+    include G5_THEME_PATH.'/doc/assets.php';
+?>
 <div class="Wrap">
         <header id="header">
             <div class="inner">
                 <h1>
                     <a href="/">
-                        <img src="<?php echo G5_THEME_URL ?>/img/logo_w.png" alt="">
+                        <img src="<?php echo G5_THEME_URL ?>/img/logo_w.png" alt="<?= $company ?>">
                     </a>
                 </h1>
                 <nav id="gnb">
-                    <ul>
-                    <li><a href="<?php echo G5_THEME_URL ?>/doc/m011.php">회사소개</a></li>
-                    <li><a href="<?php echo G5_THEME_URL ?>/doc/m012.php">오시는길</a></li>
-                    <li><a href="/bbs/board.php?bo_table=qa">문의게시판</a></li>
-                    <li><a href="/bbs/board.php?bo_table=notice">알려드립니다.</a></li>
-                    <li><a href="/bbs/board.php?bo_table=gallery">사진갤러리</a></li>
-                    </ul>
+<?php
+    include G5_THEME_PATH.'/doc/nav.php';
+?>
                 </nav>
                 <div class="lnk">
                     <i class="xi-bars"></i>
                 </div>
             </div>
         </header>
+<?php
+if(!defined('_INDEX_')) { 
+    include G5_THEME_PATH.'/doc/sub.head.php';
+}
+?>
 
