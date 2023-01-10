@@ -18,9 +18,13 @@ if(G5_COMMUNITY_USE === false) {
 
 
 
+<footer id="footer">
+            &copy; 내가 만든 첫번쨰 홈페이지.
+        </footer>
+    </div>
 
-
-
+    <script src="<?php echo G5_THEME_URL ?>/js/slick.min.js"></script>
+    <script src="<?php echo G5_THEME_URL ?>/js/main.js"></script>
 
 
 
