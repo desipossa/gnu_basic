@@ -6,7 +6,7 @@ include_once(G5_THEME_PATH.'/head.php');
 ?>
 
 <div class="sub">
-    여기 회사소개 넣을거임... <?= $num ?>
+    여기 회사소개 넣을거임...
 </div>
 
 

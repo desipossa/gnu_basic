@@ -12,6 +12,9 @@ if(G5_COMMUNITY_USE === false) {
     return;
 }
 
+
+
+// 헤더
 include_once(G5_THEME_PATH.'/head.php');
 ?>
 
@@ -63,6 +66,6 @@ include_once(G5_THEME_PATH.'/head.php');
 
 
 
-
+// 풋터
 <?php
 include_once(G5_THEME_PATH.'/tail.php');

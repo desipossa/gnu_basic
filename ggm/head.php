@@ -24,9 +24,15 @@ if(defined('_INDEX_')) { // index에서만 실행
     include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
 }
 ?>
+
+
+
+<!-- assets.php로 이동 -->
 <?php
-    include G5_THEME_PATH.'/doc/assets.php';
+     include G5_THEME_PATH.'/doc/assets.php';  
 ?>
+
+
 <div class="Wrap">
         <header id="header">
             <div class="inner">
@@ -36,15 +42,18 @@ if(defined('_INDEX_')) { // index에서만 실행
                     </a>
                 </h1>
                 <nav id="gnb">
-<?php
-    include G5_THEME_PATH.'/doc/nav.php';
-?>
+                    <!-- nav.php로 이동 -->
+                    <?php
+                         include G5_THEME_PATH.'/doc/nav.php';
+                    ?>
                 </nav>
                 <div class="lnk">
                     <i class="xi-bars"></i>
                 </div>
             </div>
         </header>
+
+
 <?php
 if(!defined('_INDEX_')) { 
     include G5_THEME_PATH.'/doc/sub.head.php';

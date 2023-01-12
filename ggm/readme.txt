@@ -1,4 +1,4 @@
-Theme Name: 깔끄미청소 실습
+Theme Name: 깔끄미 청소 실습
 Theme URI: http://theme.sir.kr/gnuboard5/demo/basic
 Maker: SIR
 Maker URI: http://sir.kr

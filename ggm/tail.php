@@ -13,21 +13,20 @@ if(G5_COMMUNITY_USE === false) {
 ?>
 
 
+
+
+
+
 <?php
-if(!defined('_INDEX_')) { 
-    include G5_THEME_PATH.'/doc/sub.tail.php';
-}
+include G5_THEME_PATH.'/doc/sub.tail.php';
 ?>
 
 
-
-
-<footer id="footer">
-            &copy; <?= $company ?>.
+<!-- 풋터 html -->
+        <footer id="footer">
+            &copy; <?= $company ?>
         </footer>
     </div>
-
-
 
 
 
@@ -50,14 +49,16 @@ if ($config['cf_analytics']) {
 }
 ?>
 
-<!-- } 하단 끝 -->
-
 <script>
 $(function() {
     // 폰트 리사이즈 쿠키있으면 실행
     font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
 });
 </script>
+
+
+
+
 
 <?php
 include_once(G5_THEME_PATH."/tail.sub.php");
