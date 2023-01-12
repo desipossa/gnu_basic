@@ -246,6 +246,7 @@
 
 #mainContent {
     padding: 50px 0;
+    background: linear-gradient(transparent 50%, #f9f9f9 50%);
 }
 
 #mainContent .main_content {
@@ -299,6 +300,139 @@
 #mainContent .main_content li p {
     font-size: 14px;
 }
+
+#mainCustomer {
+    padding: 50px 0;
+}
+
+#mainCustomer .main_customer {
+    gap: 30px;
+}
+
+#mainCustomer .main_customer li {
+    flex: 1;
+}
+
+#mainCustomer .main_customer h3 {
+    font-size: 21px;
+    line-height: 40px;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#mainCustomer .main_customer h3 a {
+    font-size: 8px;
+    float: right;
+}
+
+#mainCustomer .main_customer .notice_con li {
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#mainCustomer .map_case {
+    position: relative;
+    padding-bottom: 35%;
+    background: #da544b;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#mainCustomer .map_con {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#subPage {}
+
+#subTitle {
+    line-height: 30px;
+    font-size: 13px;
+    text-align: right;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+}
+
+#subContent .sub_content {}
+
+
+#subContent .article {
+    flex: 9;
+    padding: 40px 40px 40px 0;
+    border-right: 1px solid #ddd;
+}
+
+#subContent .aside {
+    flex: 3;
+    padding: 40px 0 100px 40px;
+}
+
+#subContent .article h2 {
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 40px 0;
+}
+
+#subContent .article h2 strong {
+    font-size: 21px;
+}
+
+#subContent .article h2 span {
+    font-size: 15px;
+    color: #aaa;
+}
+
+#subContent .lnb {
+    margin: 0 0 50px 0;
+}
+
+#subContent .lnb li a {
+    display: block;
+    line-height: 40px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#subContent .lnb li a::before {
+    content: "\e93f";
+    font-family: xeicon;
+    font-size: 3px;
+    padding: 0 15px;
+
+}
+
+#subContent .lnb li.on a {
+    background: linear-gradient(to left bottom, #0a96ba, #032777, #333333);
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    border-radius: 5px;
+}
+
+#subContent .slogan {
+    margin: 0 0 30px 0;
+}
+
+#subContent .sub_customer li {
+    border-bottom: 1px solid #032777;
+    text-align: right;
+    line-height: 30px;
+}
+
+#subContent .sub_customer li:first-child {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+#subContent .sub_customer li:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+
 
 
 #footer {
