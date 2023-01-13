@@ -33,7 +33,7 @@ if(defined('_INDEX_')) { // index에서만 실행
 <div class="Wrap">
         <div class="top_banner">
             <div class="f_inner">
-                <span>부산 아파트입주청소 이사청소 금맥 : 부산 아파트입주청소 부산 양산 김해 기장 아파트입주청소 이사청소 오피스텔청소 상가청소 전문업체 금맥
+                <span><?=$as_slogan?> : <?=$as_description?> <?=$as_company?>
                 </span>
                 <a href="/adm" target="_blank"><i class="xi-pause"></i></a>
             </div>

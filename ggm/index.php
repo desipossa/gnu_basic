@@ -86,8 +86,8 @@ include_once(G5_THEME_PATH.'/head.php');
                         </a>
                     </li>
                     <li class="customer">
-                        <a href="">051-783-2317</a>
-                        <p>부산 양산 김해 기장 아파트입주청소 이사청소 오피스텔청소 상가청소 전문업체</p>
+                        <a href="tel:<?=$as_tel?>"><?=$as_tel?></a>
+                        <p><?=$as_description?></p>
                         <i class="xi-user-o"></i>
                     </li>
                 </ul>
@@ -97,7 +97,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <section id="mainContent">
                 <ul class="f_inner main_content">
                     <li>
-                        <a href="">
+                        <a href="<?php echo G5_THEME_URL ?>/doc/m012.php">
                             <figure>
                                 <img src="<?php echo G5_THEME_URL ?>/images/main_s011.jpg" alt="">
                             </figure>
@@ -134,13 +134,10 @@ include_once(G5_THEME_PATH.'/head.php');
             <section id="mainCustomer">
                 <ul class="f_inner main_customer">
                     <li>
-                        <h3>깔끄미청소에서 알려드립니다. <a href=""><i class="xi-plus"></i></a></h3>
-                        <ul class="notice_con">
-                            <li>Lorem ipsum dolor sit amet consectetur.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur.</li>
-                        </ul>
+                        <h3><?=$as_company?>에서 알려드립니다. 
+                        <a href="/bbs/board.php?bo_table=notice"><i class="xi-plus"></i></a></h3>
+                        <!-- 최근게시물... -->
+                        <?php echo latest('theme/notice', 'notice', 4, 23);?>
                     </li>
                     <li>
                         <div class="map_case">

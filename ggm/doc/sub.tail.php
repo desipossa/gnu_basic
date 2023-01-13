@@ -2,18 +2,13 @@
                     </article>
                     <aside class="aside">
                         <div class="lnb">
-                            <ul>
-                                <li><a href="">금맥청소 소개</a></li>
-                                <li class="on"><a href="">아파트입주청소</a></li>
-                                <li><a href="">이사/상가청소</a></li>
-                                <li><a href="">사무실청소</a></li>
-                                <li><a href="">청소갤러리</a></li>
-                                <li><a href="">질문과답변</a></li>
-                            </ul>
+<?php
+     include G5_THEME_PATH.'/doc/nav.php';  
+?>
                         </div>
 
                         <figure class="slogan">
-                            <img src="./images/slogan.png" alt="">
+                            <img src="<?php echo G5_THEME_URL ?>/images/slogan.png" alt="">
                         </figure>
 
                         <ul class="sub_customer">
@@ -29,10 +24,8 @@
 
         <?
         if($board['bo_table'] == 'qa') {
-            $num = 3;
-        } else if($board['bo_table'] == 'notice') {
-            $num = 4;
-        }else if($board['bo_table'] == 'gallery') {
+            $num = 6;
+        } else if($board['bo_table'] == 'gallery') {
             $num = 5;
         }
         ?>
@@ -41,6 +34,6 @@
         <script>
         $(function(){
             var num = <?= $num ?>;
-            $('#aside ul>li').eq(num-1).addClass('on');
+            $('.lnb ul>li').eq(num-1).addClass('on');
         })
         </script>
