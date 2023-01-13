@@ -58,7 +58,7 @@
 #mainVisual {
     position: relative;
     height: 700px;
-    background: url(../img00/main_slider01.jpg) no-repeat center top/cover;
+    background: url(../images/main_slider01.jpg) no-repeat center top/cover;
 }
 
 #mainVisual .main_slide {
@@ -395,7 +395,15 @@
     display: block;
     line-height: 40px;
     font-size: 15px;
-    border-bottom: 1px solid #ddd;
+
+}
+
+#subContent .lnb li~li a {
+    border-top: 1px solid #ddd;
+}
+
+#subContent .lnb li.on+li a {
+    border-top: 1px solid transparent;
 }
 
 #subContent .lnb li a::before {

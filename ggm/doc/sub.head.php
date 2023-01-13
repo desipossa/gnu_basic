@@ -1,31 +1,14 @@
 <div id="subPage">
-            <div class="sub_bar">
+            <section id="subTitle">
                 <div class="inner">
-                    <span>
-                        <?
-                        if($board['bo_subject']) {
-                            echo $board['bo_subject'];
-                        }
-                        else {
-                            echo $title;
-                        }
-                        ?> / <?= $company ?>
-                    </span>
-                </div>  
-            </div>
-            <div class="inner">
-                <article id="article">
-                    <!-- 내용 들어갈 부분 -->
-                    <h2>
-                        <?
-                        if($board['bo_subject']) {
-                            echo $board['bo_subject'];
-                        }
-                        else {
-                            echo $title;
-                        }
-                        ?>
-                        /<span><?= $company ?></span>
-                    </h2>
-                    
-                    <div class="content">
+                    깔끔이청소 / 깔끔이청소 소개
+                </div>
+            </section>
+            <section id="subContent">
+                <div class="f_inner sub_content">
+                    <article class="article">
+                        <h2><strong>깔끔이청소 소개</strong> / <span>깔끔이청소</span></h2>
+                        <div class="content">
+
+
+

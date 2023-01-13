@@ -1,12 +1,29 @@
-                    </div>
-                </article>
-                <aside id="aside">
-                    <!-- 사이드 메뉴 -->
-                    <?php
-                         include G5_THEME_PATH.'/doc/nav.php';
-                    ?>
-                </aside>
-            </div>
+</div>
+                    </article>
+                    <aside class="aside">
+                        <div class="lnb">
+                            <ul>
+                                <li><a href="">금맥청소 소개</a></li>
+                                <li class="on"><a href="">아파트입주청소</a></li>
+                                <li><a href="">이사/상가청소</a></li>
+                                <li><a href="">사무실청소</a></li>
+                                <li><a href="">청소갤러리</a></li>
+                                <li><a href="">질문과답변</a></li>
+                            </ul>
+                        </div>
+
+                        <figure class="slogan">
+                            <img src="./images/slogan.png" alt="">
+                        </figure>
+
+                        <ul class="sub_customer">
+                            <li>Tel : <a href="tel:051-331-3354">051-331-3354</a></li>
+                            <li>e-mail : <a href="mailto:jjs3354@naver.com">jjs3354@naver.com</a></li>
+                        </ul>
+
+                    </aside>
+                </div>
+            </section>
         </div>
 
 

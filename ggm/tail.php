@@ -15,23 +15,33 @@ if(G5_COMMUNITY_USE === false) {
 
 
 
-
-
 <?php
 include G5_THEME_PATH.'/doc/sub.tail.php';
 ?>
 
-
-<!-- 풋터 html -->
-        <footer id="footer">
-            &copy; <?= $company ?>
+<footer id="footer" class="d_bg">
+            <address>
+                부산광역시 북구 만덕2로 14 상가동 제314호
+            </address>
+            <ul class="f_con f_inner">
+                <li>대표자 : 전정선</li>
+                <li>사업자등록번호 : 606-11-45081</li>
+                <li>Tel : <a href="tel:051-331-3354">051-331-3354</a></li>
+                <li>e-mail : <a href="mailto:jjs3354@naver.com">jjs3354@naver.com</a></li>
+            </ul>
+            <span class="copy">
+                &copy; 부산 아파트입주청소 이사청소 금맥 All Rights Reserved.
+            </span>
         </footer>
+
+
     </div>
 
 
 
-    <script src="<?php echo G5_THEME_URL ?>/js/slick.min.js"></script>
-    <script src="<?php echo G5_THEME_URL ?>/js/main.js"></script>
+
+<script src="<?php echo G5_THEME_URL ?>/js/slick.min.js"></script>
+<script src="<?php echo G5_THEME_URL ?>/js/main.js"></script>
 
 
 

@@ -25,31 +25,31 @@ if(defined('_INDEX_')) { // index에서만 실행
 }
 ?>
 
-
-
-<!-- assets.php로 이동 -->
+<!-- assets.php 포함하기 -->
 <?php
      include G5_THEME_PATH.'/doc/assets.php';  
 ?>
 
-
 <div class="Wrap">
+        <div class="top_banner">
+            <div class="f_inner">
+                <span>부산 아파트입주청소 이사청소 금맥 : 부산 아파트입주청소 부산 양산 김해 기장 아파트입주청소 이사청소 오피스텔청소 상가청소 전문업체 금맥
+                </span>
+                <a href="/adm" target="_blank"><i class="xi-pause"></i></a>
+            </div>
+        </div>
         <header id="header">
-            <div class="inner">
+            <div class="f_inner">
                 <h1>
                     <a href="/">
-                        <img src="<?php echo G5_THEME_URL ?>/img/logo_w.png" alt="<?= $company ?>">
+                        <img src="<?php echo G5_THEME_URL ?>/images/logo.png" alt="">
                     </a>
                 </h1>
-                <nav id="gnb">
-                    <!-- nav.php로 이동 -->
-                    <?php
-                         include G5_THEME_PATH.'/doc/nav.php';
-                    ?>
+                <nav class="gnb">
+<?php
+     include G5_THEME_PATH.'/doc/nav.php';  
+?>
                 </nav>
-                <div class="lnk">
-                    <i class="xi-bars"></i>
-                </div>
             </div>
         </header>
 
