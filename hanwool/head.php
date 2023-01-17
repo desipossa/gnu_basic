@@ -47,7 +47,7 @@ if(defined('_INDEX_')) { // index에서만 실행
                     <nav class="gnb">
                         <ul>
                             <li>
-                                <a href="">회사소개</a>
+                                <a href=""><?= $as_company ?> 소개</a>
                                 <? include G5_THEME_PATH.'/doc/nav01.php';?>
                             </li>
                             <li>
