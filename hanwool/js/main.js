@@ -24,7 +24,23 @@ $(function () {
         $('.main_slide').slick('slickGoTo', idx);
         $('.m_link li').removeClass('on');
         $(this).parent().addClass('on');
-    })
+    });
+
+    $(window).on('scroll', function () {
+        var sct = $(window).scrollTop();
+        console.log(sct);
+
+        if (sct > 500) {
+            //$('.toTop').fadeIn();
+            $('.toTop').addClass('on')
+        } else {
+            $('.toTop').removeClass('on')
+        }
+    });
+
+    $('.toTop').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 })
+    });
 
 
 
