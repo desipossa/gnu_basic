@@ -46,6 +46,13 @@ if(defined('_INDEX_')) { // index에서만 실행
                     </h1>
                     <nav class="gnb">
                         <ul>
+                        <?
+                            for ($i=1; $i<count($as_nav); $i++) {
+                                echo '<li><a href="">'.$as_nav[$i].'</a>';
+                                include G5_THEME_PATH.'/doc/nav0'.($i+1).'.php';
+                                echo '</li>';
+                            }
+                        ?>
                             <li>
                                 <a href=""><?= $as_company ?> 소개</a>
                                 <? include G5_THEME_PATH.'/doc/nav01.php';?>
