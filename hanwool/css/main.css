@@ -96,6 +96,11 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
+    .header .top_banner .inner {
+        padding: 0 0;
+    }
+
     .header .top_banner .left {
         display: none;
     }
@@ -178,8 +183,57 @@ h6 {
 
 @media (max-width: 768px) {
     .header .gnb {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+
+        width: calc(100% - 90px);
+        height: 100vh;
+        background: #fff;
+        border-right: 1px solid #ddd;
+    }
+
+    .header .gnb>ul {
+        flex-direction: column;
+        padding: 150px 15px 0 15px;
+        line-height: 40px;
+    }
+
+    .header .gnb>ul>li {
+        position: relative;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header .gnb>ul>li~li::before {
         display: none;
     }
+
+    .header .gnb>ul>li>a {
+        display: block;
+        padding: 0 0;
+        font-size: 18px;
+    }
+
+    .header .gnb>ul>li:last-child {
+        display: none;
+    }
+
+    .header .gnb>ul>li .submenu {
+        position: static;
+        transform: translate(0, 0);
+        width: auto;
+        opacity: 1;
+        visibility: visible;
+
+        display: none;
+
+    }
+
+    .header .gnb>ul>li:hover .submenu {
+        transition: none;
+    }
+
 }
 
 
@@ -296,6 +350,7 @@ h6 {
 @media (max-width: 768px) {
     .mainVisual {
         padding: 0 0;
+        border-bottom: none;
     }
 
     .mainVisual::before {
@@ -314,6 +369,7 @@ h6 {
         position: static;
         transform: translate(0, 0);
         width: auto;
+        border-bottom: 1px solid #337689;
     }
 
     .mainVisual .m_link>ul {
@@ -340,6 +396,16 @@ h6 {
     height: 300px;
     /* filter: grayscale(1); */
     border-bottom: 1px solid #337689;
+}
+
+@media (max-width: 768px) {
+    .mainMap {
+        padding: 20px 15px;
+    }
+
+    .mainMap ._map_ {
+        height: 200px;
+    }
 }
 
 .mainCustomer {
@@ -397,6 +463,38 @@ h6 {
     float: right;
 }
 
+@media (max-width: 768px) {
+    .mainCustomer .contact {
+        text-align: center;
+    }
+
+    .mainCustomer .contact a {
+        align-self: center;
+    }
+
+    .mainCustomer .contact a:first-child {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+
+        margin: 0 0;
+        padding: 7px 30px;
+        text-align: left;
+        color: #fff;
+        background: #337689;
+        width: 100%;
+    }
+
+
+    .mainCustomer .contact a:first-child::before {
+        content: "\ec27";
+        font-family: xeicon;
+        margin: 0 10px 0 0;
+    }
+
+}
+
 
 
 .footer {
@@ -413,6 +511,18 @@ h6 {
     gap: 10px;
     justify-content: center;
     margin: 0 0 10px 0;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0 70px 0;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        gap: 5px;
+        margin: 0 0 20px 0;
+    }
 }
 
 
@@ -586,6 +696,7 @@ h6 {
     position: fixed;
     bottom: 100px;
     right: 100px;
+    z-index: 1000;
 }
 
 .toTop i {
@@ -605,4 +716,37 @@ h6 {
 .toTop.on i {
     opacity: 1;
     visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .toTop {
+        bottom: 0;
+        right: 0;
+    }
+
+    .toTop i {
+        padding: 9px;
+    }
+}
+
+.mopen {
+    position: fixed;
+    top: 60px;
+    right: 15px;
+    border: none;
+    background: transparent;
+
+    display: none;
+}
+
+.mopen i {
+    background: #f7f7f7;
+    padding: 5px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .mopen {
+        display: block;
+    }
 }
