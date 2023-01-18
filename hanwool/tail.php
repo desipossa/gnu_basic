@@ -37,7 +37,9 @@ if(!defined('_INDEX_')) { // index가 아닐 떄...
         <i class="xi-arrow-top"></i>
     </div>
 
-
+    <button class="mopen">
+        <i class="xi-bars"></i>
+    </button>
 
 
 <?php
