@@ -47,7 +47,7 @@ if(defined('_INDEX_')) { // index에서만 실행
                     <nav class="gnb">
                         <ul>
                         <?
-                            for ($i=1; $i<count($as_nav); $i++) {
+                            for ($i=0; $i<count($as_nav); $i++) {
                                 echo '<li><a href="">'.$as_nav[$i].'</a>';
                                 include G5_THEME_PATH.'/doc/nav0'.($i+1).'.php';
                                 echo '</li>';
